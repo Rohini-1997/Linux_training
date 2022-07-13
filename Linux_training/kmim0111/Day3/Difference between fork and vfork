@@ -1,0 +1,23 @@
+Difference between fork(),vfork and excec ?
+fork():
+  1.Both the child and parent process will have different address space.
+  2.Any modification done by the child in its address space is not visible to parent as both will have seperate copies.
+  3.This uses copy on write.
+  4.Both parent and child execute simultaneously.
+  5.Behavior is predictable
+  
+  
+vfork():
+ 1.Both the child and parent process will have same address space.
+ 2.Any modification done by the child in its address space visible to parent as both will have same copies.
+ 3.vfork()doesnot use copy on write.
+ 4.Parent process will suspend until child execution is completed.
+ 5.Behavior is not predictable.
+ 
+ 
+excec():
+ 1.It is a system call of operatiing system.
+ 2.exec()runs executable files.
+ 3.It doesnot create new process.
+ 4.Here the process identifier doesnot change.
+ 

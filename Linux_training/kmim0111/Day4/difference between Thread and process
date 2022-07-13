@@ -1,0 +1,18 @@
+What is the difference between a Task, Process and thread?
+Process :
+     1.Process means any program is in execution.
+     2.Process takes more time to Terminate.
+     3.It takes more time for creation.
+     4.It also takes more time for context switching.
+     5.Process consume more resources.
+     6.Process is isolated.
+     7.Process is less efficient in term of communication.
+     
+Thread :
+     1.Thread means segment of program.
+     2.Thread takes less time to terminate.
+     3.It takes less time for creation.
+     4.It takes less time for context switching.
+     5.Thread consume less resources.
+     6.Threads shared memory.
+     7.Process is more efficient in term of communication.
